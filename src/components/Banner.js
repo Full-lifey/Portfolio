@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import BannerImg from '../assets/img/20180606_091700.jpg';
+import BannerImg from "../assets/img/Mountains_Widescreen_Background.jpg";
+
+import "./Banner.scss";
 
 const Banner = () => {
   return (
     <div className='banner-container'>
-      <img className='banner-header-img' src={BannerImg} alt='Slovakia Lake' />
+      <div className='banner-img-wrapper'>
+        <img className='banner-header-img' src={BannerImg} alt='Banner Img' />
+      </div>
       <div className='banner-story'>
         <div className='banner-header'>
           <h1>Joel Perez</h1>
