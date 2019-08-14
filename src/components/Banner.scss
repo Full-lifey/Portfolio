@@ -1,0 +1,66 @@
+.banner-container {
+  width: 100%;
+  // height: 1000px;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "Josefin Sans", sans-serif;
+  .banner-img-wrapper {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    // max-height: 500px;
+    height: 500px;
+    .banner-header-img {
+      // display: block;
+      // position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-width: 700px;
+      height: 100%;
+    }
+  }
+  .banner-story {
+    padding: 10px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    .banner-header {
+      h1 {
+        font-weight: 100;
+        letter-spacing: -0.3rem;
+        font-size: 3.5rem;
+      }
+    }
+    .banner-subheader {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    p {
+      font-size: 1.35rem;
+      letter-spacing: -0.1rem;
+    }
+    .banner-btn {
+      display: flex;
+      justify-content: center;
+      a {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 4em;
+        height: 4em;
+        min-width: 14em;
+        border-radius: 4em;
+        text-decoration: none;
+        color: black;
+        margin-right: 5%;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.2s ease-in-out,
+          box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+        &:hover {
+          color: #47d3e5;
+          box-shadow: inset 0 0 0 1px #47d3e5;
+        }
+      }
+    }
+  }
+}
