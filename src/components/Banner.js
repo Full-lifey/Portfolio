@@ -29,7 +29,7 @@ const Banner = () => {
           proud of that shit.
         </p>
         <div className='banner-btn'>
-          <button>Contact Me</button>
+          <a href='mailto:joel@joelperez.dev'>Contact Me</a>
         </div>
       </div>
     </div>

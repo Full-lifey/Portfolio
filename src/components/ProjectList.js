@@ -4,6 +4,8 @@ import { sampleData } from "../assets/sample_data";
 
 import gitHub from "../assets/img/GitHub-Mark-32px.png";
 
+import "./ProjectList.scss";
+
 function ProjectList(props) {
   const [projects, setprojects] = useState([]);
 
@@ -19,30 +21,34 @@ function ProjectList(props) {
         {projects.map((project, index) => {
           return (
             <div className={`project-item`} key={index}>
-              <img
-                className={`project-img ${index % 2 === 0 ? "left" : ""}`}
-                src={project.image}
-                alt={project.title}
-              />
+              <div className='project-img-wrapper'>
+                <img
+                  className={`project-img ${index % 2 === 0 ? "left" : ""}`}
+                  src={project.image}
+                  alt={project.title}
+                />
+              </div>
               <div className='project-text'>
                 <h2 className='project-title'>{project.title}</h2>
                 <p className='project-description'>{project.description}</p>
-                <a
-                  className='deployment-btn'
-                  href={project.deployment}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Deployment
-                </a>
-                <a
-                  className='repo'
-                  href={project.repo}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img src={gitHub} alt='Repository' />
-                </a>
+                <div className='project-actions'>
+                  <a
+                    className='deployment-btn'
+                    href={project.deployment}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Check it Out
+                  </a>
+                  <a
+                    className='repo'
+                    href={project.repo}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src={gitHub} alt='Repository' />
+                  </a>
+                </div>
               </div>
             </div>
           );
