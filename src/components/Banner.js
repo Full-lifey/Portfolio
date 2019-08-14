@@ -16,17 +16,23 @@ const Banner = () => {
         </div>
         <div className='banner-subheader'>
           <p>
-            You think water moves fast? You should see ice. It moves like it has
-            a mind. Like it knows it killed the world once and got a taste for
-            murder.
+            Full-stack software engineer with extensive experience in server and
+            networking infrastructure.
           </p>
         </div>
         <p className='banner-detail'>
-          Now that there is the Tec-9, a crappy spray gun from South Miami. This
-          gun is advertised as the most popular gun in American crime. Do you
-          believe that shit? It actually says that in the little book that comes
-          with it: the most popular gun in American crime. Like they're actually
-          proud of that shit.
+          I've been in technology for 15 years. From 2013 to 2017 I ran the IT
+          department at PCS Ferguson. This involved ~25 servers, ~30 networks,
+          and ~400 employees. In 2017 I was promoted to run the server
+          infrastructure for Apergy Corporation after they spun off from Dover.
+          During these last fifteen years, I have seen first hand how software
+          has been shaping the lives and processes of businesses and individuals
+          around me. Then later while on a sabbatical over 2018, I decided it
+          was time to build this software to contribute to society as best I
+          could. Writing software fills me with joy as I'm able to achieve
+          technical results while being creative at the same time. When not
+          writing code I am a competitive golfer, avid outdoorsman, and
+          skier/snowboarder.
         </p>
         <div className='banner-btn'>
           <a href='mailto:joel@joelperez.dev'>Contact Me</a>
