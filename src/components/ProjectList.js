@@ -21,9 +21,13 @@ function ProjectList(props) {
         {projects.map((project, index) => {
           return (
             <div className={`project-item`} key={index}>
-              <div className='project-img-wrapper'>
+              <div
+                className={`project-img-wrapper ${
+                  index % 2 === 1 ? "right" : ""
+                }`}
+              >
                 <img
-                  className={`project-img ${index % 2 === 0 ? "left" : ""}`}
+                  className={`project-img`}
                   src={project.image}
                   alt={project.title}
                 />
