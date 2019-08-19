@@ -1,16 +1,17 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 import BannerImg from "../assets/img/Mountains_Widescreen_Background.jpg";
 
 import "./Banner.scss";
 
-const Banner = () => {
+const Banner = props => {
   return (
     <div className='banner-container'>
-      <div className='banner-img-wrapper'>
+      <Parallax className='banner-img-wrapper' x={[-80, 80]}>
         <img className='banner-header-img' src={BannerImg} alt='Banner Img' />
-      </div>
-      <div className='banner-story'>
+      </Parallax>
+      <Parallax className='banner-story' x={[80, -80]}>
         <div className='banner-header'>
           <h1>Joel Perez</h1>
         </div>
@@ -37,7 +38,7 @@ const Banner = () => {
         <div className='banner-btn'>
           <a href='mailto:joel@joelperez.dev'>Contact Me</a>
         </div>
-      </div>
+      </Parallax>
     </div>
   );
 };

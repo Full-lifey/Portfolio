@@ -14,7 +14,7 @@ export const sampleData = [
   {
     title: "Tabless Thursday",
     description:
-      "Tabless Thursday is a web application built to save tabs in order to reduce CPU and RAM usage by allowing users to save and close open tabs in browsers. I was one of two assigned to the front end of this application. We decided to build a single page React application using Router and Redux.",
+      "Tabless Thursday is a web application built to save tabs in order to reduce CPU and RAM usage by allowing users to save and close open tabs in browsers. I was one of two assigned to the front end of this application. We decided to build a single-page React application using Router and Redux.",
     image: Tabless,
     deployment: "https://tabless-thursday-fe.netlify.com/",
     repo:
