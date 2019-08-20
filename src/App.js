@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <ParallaxProvider>
-        <Banner />
+        <Route path='/' component={Banner} />
       </ParallaxProvider>
       <ProjectList />
     </div>
