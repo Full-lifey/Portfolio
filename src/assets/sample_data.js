@@ -6,7 +6,7 @@ export const sampleData = [
   {
     title: "Miracle Messages Map",
     description:
-      "Miracle Messages Map is a web application built to connect homeless people to their families. I was the back-end enginner on the project and I implemented a RESTful API designed using NodeJS with a PostgreSQL database.",
+      "Miracle Messages Map is a web application built to connect homeless people to their families. I was the back-end enginner on the project and I implemented a RESTful API built using NodeJS with a PostgreSQL database.",
     image: MMM,
     deployment: "https://mmm-api-docs.netlify.com/",
     repo: "https://github.com/miracle-mm/back-end"
