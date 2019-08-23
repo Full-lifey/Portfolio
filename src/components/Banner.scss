@@ -20,7 +20,7 @@
       left: 0;
       width: 100%;
       min-width: 700px;
-      height: 100%;
+      height: 100vh;
     }
   }
   .banner-story {
@@ -101,7 +101,7 @@
       height: 100vh;
       .banner-header-img {
         vertical-align: top;
-        height: 100%;
+        height: 100vh;
         flex-shrink: 0;
         position: relative;
       }
