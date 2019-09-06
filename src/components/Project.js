@@ -1,30 +1,60 @@
-import React from 'react';
+import React from "react";
+import { useInView } from "react-intersection-observer";
+
+import gitHub from "../assets/img/GitHub-Mark-32px.png";
+import styles from "./HoverFx.module.scss";
 
 function Project(props) {
+  const [ref, inView] = useInView({ threshold: 0 });
+  // const [textRef, textInView] = useInView({ threshold: 0 });
+
   if (!props.project) {
-    <h2>Loading Project</h2>;
+    return <h2>Loading Project</h2>;
   } else {
-    <div className='project-container'>
-      <img
-        className='project-header-img'
-        src={props.project.bannerImg}
-        alt={props.project.title}
-      />
-      <div className='banner-story'>
-        <div className='banner-header'>
-          <h2>{props.project.title}</h2>
+    return (
+      <div
+        className={`project-item ${
+          inView ? styles.popoverHover : styles.popoverHoverOut
+        }`}
+        key={props.index}
+        ref={ref}
+      >
+        <div
+          className={`project-img-wrapper ${
+            props.index % 2 === 1 ? "right" : ""
+          }`}
+        >
+          <img
+            className={`project-img`}
+            src={props.project.image}
+            alt={props.project.title}
+          />
         </div>
-        <p className='project-detail'>
-          Now that there is the Tec-9, a crappy spray gun from South Miami. This
-          gun is advertised as the most popular gun in American crime. Do you
-          believe that shit? It actually says that in the little book that comes
-          with it: the most popular gun in American crime. Like they're actually
-          proud of that shit.
-        </p>
-        <div className='project-btn'>
-          <button>Contact Me</button>
+        <div className='project-text'>
+          <h2 className='project-title'>{props.project.title}</h2>
+          <p className='project-description'>{props.project.description}</p>
+          <div className='project-actions'>
+            <a
+              className='deployment-btn'
+              href={props.project.deployment}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Check it Out
+            </a>
+            <a
+              className='repo'
+              href={props.project.repo}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={gitHub} alt='Repository' />
+            </a>
+          </div>
         </div>
       </div>
-    </div>;
+    );
   }
 }
+
+export default Project;
