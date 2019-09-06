@@ -1,0 +1,61 @@
+.popoverHover {
+  //opacity: 0.75;
+  animation: OPACTITYTRANSFORM 0.5s ease;
+  animation-fill-mode: forwards;
+}
+.popoverHoverOut {
+  //opacity: 0.75;
+  animation: OPACTITYTRANSFORMOUT 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.fadeInText {
+  //opacity: 0.75;
+  animation: FADEINTEXT 1s ease;
+  animation-fill-mode: forwards;
+}
+.fadeOutText {
+  //opacity: 0.75;
+  animation: FADEOUTTEXT 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes OPACTITYTRANSFORM {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes OPACTITYTRANSFORMOUT {
+  0% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes FADEINTEXT {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FADEOUTTEXT {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
