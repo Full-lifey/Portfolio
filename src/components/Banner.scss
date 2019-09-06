@@ -29,6 +29,11 @@
     display: flex;
     flex-direction: column;
     .banner-header {
+      .my-img {
+        height: 250px;
+        // width: 100px;
+        border-radius: 100%;
+      }
       h1 {
         font-weight: 100;
         letter-spacing: -0.3rem;
