@@ -26,29 +26,29 @@ function Project(props) {
         >
           <img
             className={`project-img`}
-            src={props.project.image}
+            src={props.project.imageURL}
             alt={props.project.title}
           />
         </div>
-        <div className='project-text'>
-          <h2 className='project-title'>{props.project.title}</h2>
-          <p className='project-description'>{props.project.description}</p>
-          <div className='project-actions'>
+        <div className="project-text">
+          <h2 className="project-title">{props.project.title}</h2>
+          <p className="project-description">{props.project.description}</p>
+          <div className="project-actions">
             <a
-              className='deployment-btn'
+              className="deployment-btn"
               href={props.project.deployment}
-              target='_blank'
-              rel='noopener noreferrer'
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Check it Out
             </a>
             <a
-              className='repo'
+              className="repo"
               href={props.project.repo}
-              target='_blank'
-              rel='noopener noreferrer'
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <img src={gitHub} alt='Repository' />
+              <img src={gitHub} alt="Repository" />
             </a>
           </div>
         </div>
