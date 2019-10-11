@@ -6,7 +6,8 @@ import MyImg from "../assets/img/Me.jpg";
 
 import "./Banner.scss";
 
-const parralaxInner = {
+
+const imageStyle = {
   width: "100%"
 };
 
@@ -16,7 +17,7 @@ const Banner = props => {
       <Parallax
         className="banner-img-wrapper desktop"
         x={[-80, 80]}
-        styleInner={parralaxInner}
+        styleInner={imageStyle}
       >
         <img className="banner-header-img" src={BannerImg} alt="Banner Img" />
       </Parallax>
