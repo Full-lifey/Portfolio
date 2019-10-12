@@ -6,6 +6,7 @@ import MyImg from "../assets/img/Me.jpg";
 
 import "./Banner.scss";
 
+
 const imageStyle = {
   width: "100%"
 };
