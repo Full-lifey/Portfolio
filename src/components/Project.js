@@ -24,11 +24,13 @@ function Project(props) {
             props.index % 2 === 1 ? "right" : ""
           }`}
         >
-          <img
-            className={`project-img`}
-            src={props.project.imageURL}
-            alt={props.project.title}
-          />
+          <a src={props.project.deployment}>
+            <img
+              className={`project-img`}
+              src={props.project.imageURL}
+              alt={props.project.title}
+            />
+          </a>
         </div>
         <div className="project-text">
           <h2 className="project-title">{props.project.title}</h2>
