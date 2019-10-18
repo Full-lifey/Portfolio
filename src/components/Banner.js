@@ -66,17 +66,17 @@ const Banner = props => {
             </p>
           </div>
           <p className="banner-detail">
-            I've been in technology for 15 years. From 2013 to 2017 I ran the IT
-            department at PCS Ferguson. This involved ~25 servers, ~30 networks,
-            and ~400 employees. In 2017 I was promoted to run the server
-            infrastructure for Apergy Corporation after they spun off from
-            Dover. During these last fifteen years, I have seen first hand how
-            software has been shaping the lives and processes of businesses and
-            individuals around me. Then later while on a sabbatical over 2018, I
-            decided it was time to build this software to contribute to society
-            as best I could. Writing software fills me with joy as I'm able to
+            I've been in technology for 15 years. From 2013 to 2017, I ran the
+            IT department at PCS Ferguson. This position involved ~25 servers,
+            ~30 networks, and ~400 employees. In 2017 I was promoted to run the
+            server infrastructure for Apergy Corporation after they spun off
+            from Dover. During these last fifteen years, I have seen first hand
+            how software has been shaping the lives and processes of businesses
+            and individuals around me. While on a sabbatical over 2018, I
+            decided it was time to build software to contribute to society as
+            best I could. Writing software fills me with joy as I'm able to
             achieve technical results while being creative at the same time.
-            When not writing code I am a competitive golfer, avid outdoorsman,
+            When not writing code, I am a competitive golfer, avid outdoorsman,
             and skier/snowboarder.
           </p>
           <div className="banner-btn">
