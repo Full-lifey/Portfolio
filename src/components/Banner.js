@@ -72,12 +72,13 @@ const Banner = props => {
             server infrastructure for Apergy Corporation after they spun off
             from Dover. During these last fifteen years, I have seen first hand
             how software has been shaping the lives and processes of businesses
-            and individuals around me. While on a sabbatical over 2018, I
-            decided it was time to build software to contribute to society as
-            best I could. Writing software fills me with joy as I'm able to
-            achieve technical results while being creative at the same time.
-            When not writing code, I am a competitive golfer, avid outdoorsman,
-            and skier/snowboarder.
+            and individuals around me. While on a sabbatical over 2018 and early
+            2019, I noticed that I was writing code on my own time in the middle
+            of Thailand. It was at that time that I decided it was time to build
+            software to contribute to society as best I could. Writing software
+            fills me with joy as I'm able to achieve technical results while
+            being creative at the same time. When not writing code, I am a
+            competitive golfer, avid outdoor enthusiast, and skier/snowboarder.
           </p>
           <div className="banner-btn">
             <a href="mailto:joel@joelperez.dev">Contact Me</a>
