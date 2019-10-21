@@ -24,7 +24,7 @@ function Project(props) {
             props.index % 2 === 1 ? "right" : ""
           }`}
         >
-          <a src={props.project.deployment}>
+          <a href={props.project.deployment}>
             <img
               className={`project-img`}
               src={props.project.imageURL}
