@@ -3,12 +3,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import Project from "./Project.js";
+import ProjectModal from "./ProjectModal";
 
 import "./ProjectList.scss";
 
 function ProjectList(props) {
   // state for projects
   const [projects, setProjects] = useState([]);
+  const [clickedProject, setClickedProject] = useState({});
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     // setProjects(sampleData);
@@ -19,6 +22,10 @@ function ProjectList(props) {
       });
   }, []);
 
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
   if (!projects) {
     return <h2>Loading Projects...</h2>;
   } else {
@@ -26,9 +33,21 @@ function ProjectList(props) {
       <div className="projects-list-wrapper">
         {projects.map((project, index) => {
           return (
-            <Project project={project} index={index} key={project.title} />
+            <div
+              onClick={async () => {
+                await setClickedProject(project);
+                toggleModal(project);
+              }}
+            >
+              <Project project={project} index={index} key={project.title} />
+            </div>
           );
         })}
+        <ProjectModal
+          project={clickedProject}
+          showModal={showModal}
+          toggleModal={toggleModal}
+        />
       </div>
     );
   }

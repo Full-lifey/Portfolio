@@ -24,18 +24,16 @@ function Project(props) {
             props.index % 2 === 1 ? "right" : ""
           }`}
         >
-          <a href={props.project.deployment}>
-            <img
-              className={`project-img`}
-              src={props.project.imageURL}
-              alt={props.project.title}
-            />
-          </a>
+          <img
+            className={`project-img`}
+            src={props.project.imageURL}
+            alt={props.project.title}
+          />
         </div>
         <div className="project-text">
           <h2 className="project-title">{props.project.title}</h2>
           <p className="project-description">{props.project.description}</p>
-          <div className="project-actions">
+          {/* <div className="project-actions">
             <a
               className="deployment-btn"
               href={props.project.deployment}
@@ -52,7 +50,7 @@ function Project(props) {
             >
               <img src={gitHub} alt="Repository" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     );
