@@ -35,7 +35,7 @@ const ContactForm = props => {
         <MDBRow>
           <MDBCol>
             <MDBCardBody>
-              <form onSubmit={e => handleSubmit(e)} Validate>
+              <form onSubmit={e => handleSubmit(e)}>
                 <p className="h2 text-center py-4">Contact Me</p>
                 <MDBInput
                   id="name"

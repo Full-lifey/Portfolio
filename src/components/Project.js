@@ -1,7 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-import gitHub from "../assets/img/GitHub-Mark-32px.png";
 import styles from "./HoverFx.module.scss";
 
 function Project(props) {
@@ -32,7 +31,11 @@ function Project(props) {
         </div>
         <div className="project-text">
           <h2 className="project-title">{props.project.title}</h2>
-          <p className="project-description">{props.project.description}</p>
+          <div className="project-description">
+            {props.project.preview.split("\n").map((p, key) => {
+              return <p key={key}>{p}</p>;
+            })}
+          </div>
           {/* <div className="project-actions">
             <a
               className="deployment-btn"

@@ -34,6 +34,7 @@ function ProjectList(props) {
         {projects.map((project, index) => {
           return (
             <div
+              key={project.id}
               onClick={async () => {
                 await setClickedProject(project);
                 toggleModal(project);
