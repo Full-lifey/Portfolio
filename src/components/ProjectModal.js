@@ -98,7 +98,10 @@ const ProjectModal = props => {
             </div>
             <div className="modal-footer-right">
               <MDBTooltip placement="top">
-                <IconButton href={props.project.repo} aria-label="close">
+                <IconButton
+                  onClick={() => props.toggleModal()}
+                  aria-label="close"
+                >
                   <CloseIcon fontSize="large" />
                 </IconButton>
                 <div>Close</div>

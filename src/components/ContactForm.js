@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import "./ContactForm.scss";
 
@@ -16,8 +17,9 @@ const ContactForm = props => {
     name: "",
     email: "",
     phone: "",
-    body: ""
+    text: ""
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -26,7 +28,22 @@ const ContactForm = props => {
   const handleSubmit = e => {
     e.preventDefault();
     console.log("submitting!!!");
+    console.log(form);
     e.target.className += " was-validated";
+    axios
+      .post("https://joel-perez-portfolio-be.herokuapp.com/api/emails", form)
+      .then(res => {
+        setForm({
+          name: "",
+          from: "",
+          phone: "",
+          text: ""
+        });
+        setSubmitted(!submitted);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   };
 
   return (
@@ -45,7 +62,7 @@ const ContactForm = props => {
                   type="text"
                   error="wrong"
                   success="right"
-                  name="email"
+                  name="name"
                   size="lg"
                   value={form.name}
                   onChange={e => handleChange(e)}
@@ -58,9 +75,9 @@ const ContactForm = props => {
                   type="email"
                   error="wrong"
                   success="right"
-                  name="email"
+                  name="from"
                   size="lg"
-                  value={form.email}
+                  value={form.from}
                   onBlur={e => (e.target.className += " was-validated")}
                   onChange={e => handleChange(e)}
                 >
@@ -84,17 +101,21 @@ const ContactForm = props => {
                 />
 
                 <MDBInput
-                  id="body"
+                  id="text"
                   label="Your Message"
                   // icon="pen-fancy"
                   group
                   type="textarea"
-                  name="body"
+                  name="text"
                   size="lg"
-                  value={form.body}
+                  value={form.text}
                   onChange={e => handleChange(e)}
                 />
                 <div className="text-center mt-3">
+                  <div className={submitted ? "success" : "hidden"}>
+                    Form submitted successfully. You will hear back from me in
+                    less than 24 hours.
+                  </div>
                   <MDBBtn
                     id="contact-Submit-btn"
                     // color="winter-neva-gradient"
