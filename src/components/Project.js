@@ -36,24 +36,6 @@ function Project(props) {
               return <p key={key}>{p}</p>;
             })}
           </div>
-          {/* <div className="project-actions">
-            <a
-              className="deployment-btn"
-              href={props.project.deployment}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Check it Out
-            </a>
-            <a
-              className="repo"
-              href={props.project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="Repository" />
-            </a>
-          </div> */}
         </div>
       </div>
     );

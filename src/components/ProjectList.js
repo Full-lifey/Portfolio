@@ -14,11 +14,13 @@ function ProjectList(props) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    // setProjects(sampleData);
     axios
       .get("https://joel-perez-portfolio-be.herokuapp.com/api/projects")
       .then(res => {
         setProjects(res.data);
+      })
+      .catch(err => {
+        console.log(err);
       });
   }, []);
 
