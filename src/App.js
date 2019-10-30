@@ -6,14 +6,16 @@ import Banner from "./components/Banner.js";
 import ProjectList from "./components/ProjectList.js";
 
 import "./App.scss";
+import ContactForm from "./components/ContactForm.js";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <ParallaxProvider>
-        <Route path='/' component={Banner} />
+        <Route path="/" component={Banner} />
       </ParallaxProvider>
       <ProjectList />
+      <ContactForm />
     </div>
   );
 }

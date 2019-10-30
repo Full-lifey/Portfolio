@@ -1,7 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-import gitHub from "../assets/img/GitHub-Mark-32px.png";
 import styles from "./HoverFx.module.scss";
 
 function Project(props) {
@@ -24,34 +23,18 @@ function Project(props) {
             props.index % 2 === 1 ? "right" : ""
           }`}
         >
-          <a src={props.project.deployment}>
-            <img
-              className={`project-img`}
-              src={props.project.imageURL}
-              alt={props.project.title}
-            />
-          </a>
+          <img
+            className={`project-img`}
+            src={props.project.imageURL}
+            alt={props.project.title}
+          />
         </div>
         <div className="project-text">
           <h2 className="project-title">{props.project.title}</h2>
-          <p className="project-description">{props.project.description}</p>
-          <div className="project-actions">
-            <a
-              className="deployment-btn"
-              href={props.project.deployment}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Check it Out
-            </a>
-            <a
-              className="repo"
-              href={props.project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gitHub} alt="Repository" />
-            </a>
+          <div className="project-description">
+            {props.project.preview.split("\n").map((p, key) => {
+              return <p key={key}>{p}</p>;
+            })}
           </div>
         </div>
       </div>
