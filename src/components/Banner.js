@@ -81,7 +81,7 @@ const Banner = props => {
             competitive golfer, avid outdoor enthusiast, and skier/snowboarder.
           </p>
           <div className="banner-btn">
-            <a href="mailto:joel@joelperez.dev">Contact Me</a>
+            <a href="https://www.joelperez.dev/#contact">Contact Me</a>
           </div>
         </div>
       </div>
