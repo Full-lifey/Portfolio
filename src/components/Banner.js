@@ -1,16 +1,35 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 
+import { makeStyles } from "@material-ui/core/styles";
+import EmailIcon from "@material-ui/icons/Email";
+import Button from "@material-ui/core/Button";
+
 import BannerImg from "../assets/img/Mountains_Widescreen_Background.jpg";
 import MyImg from "../assets/img/Me.jpg";
 
 import "./Banner.scss";
+// import { borderRadius } from "@material-ui/system";
 
 const imageStyle = {
   width: "100%"
 };
 
+const useStyles = makeStyles(theme => ({
+  button: {
+    borderRadius: "50px",
+    userSelect: "none",
+    width: "150px",
+    margin: "auto"
+  },
+  extendedIcon: {
+    marginRight: theme.spacing(1)
+  }
+}));
+
 const Banner = props => {
+  const classes = useStyles();
+
   return (
     <div className="banner-container">
       <Parallax
@@ -46,9 +65,17 @@ const Banner = props => {
           the same time. When not writing code I am a competitive golfer, avid
           outdoor enthusiast, and skier/snowboarder.
         </p>
-        <div className="banner-btn">
-          <a href="mailto:joel@joelperez.dev">Contact Me</a>
-        </div>
+        <Button
+          variant="outlined"
+          color="primary"
+          aria-label="contact"
+          className={classes.button}
+          href="#contact"
+          startIcon={<EmailIcon />}
+          size="large"
+        >
+          Contact Me
+        </Button>
       </Parallax>
       <div className="mobile">
         <div className="banner-img-wrapper">
@@ -80,9 +107,17 @@ const Banner = props => {
             being creative at the same time. When not writing code, I am a
             competitive golfer, avid outdoor enthusiast, and skier/snowboarder.
           </p>
-          <div className="banner-btn">
-            <a href="mailto:joel@joelperez.dev">Contact Me</a>
-          </div>
+          <Button
+            variant="outlined"
+            color="primary"
+            aria-label="contact"
+            className={classes.button}
+            href="#contact"
+            startIcon={<EmailIcon />}
+            size="large"
+          >
+            Contact Me
+          </Button>
         </div>
       </div>
     </div>

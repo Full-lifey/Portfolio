@@ -47,7 +47,7 @@ const ContactForm = props => {
   };
 
   return (
-    <div className="contact-form-wrapper">
+    <div className="contact-form-wrapper" id="contact">
       <MDBContainer>
         <MDBRow>
           <MDBCol>
