@@ -1,10 +1,8 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 
-import { MDBTooltip } from "mdbreact";
 import { makeStyles } from "@material-ui/core/styles";
 import EmailIcon from "@material-ui/icons/Email";
-import Fab from "@material-ui/core/Fab";
 import Button from "@material-ui/core/Button";
 
 import BannerImg from "../assets/img/Mountains_Widescreen_Background.jpg";
@@ -19,7 +17,6 @@ const imageStyle = {
 
 const useStyles = makeStyles(theme => ({
   button: {
-    // margin: theme.spacing(1),
     borderRadius: "50px",
     userSelect: "none",
     width: "150px",
@@ -73,7 +70,7 @@ const Banner = props => {
           color="primary"
           aria-label="contact"
           className={classes.button}
-          href="https://www.joelperez.dev/#contact"
+          href="#contact"
           startIcon={<EmailIcon />}
           size="large"
         >
@@ -115,7 +112,7 @@ const Banner = props => {
             color="primary"
             aria-label="contact"
             className={classes.button}
-            href="https://www.joelperez.dev/#contact"
+            href="#contact"
             startIcon={<EmailIcon />}
             size="large"
           >
