@@ -45,10 +45,7 @@ const Banner = props => {
           <h1>Joel Perez</h1>
         </div>
         <div className="banner-subheader">
-          <p>
-            Full-stack software engineer with extensive experience in server and
-            networking infrastructure.
-          </p>
+          <p>An Experienced IT Leader Turned Full-Stack Web Developer</p>
         </div>
         <p className="banner-detail">
           I've been in technology for 15 years. From 2013 to 2017 I ran the IT
