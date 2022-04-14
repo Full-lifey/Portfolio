@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 // import { sampleData } from "../assets/sample_data";
-import axios from "axios";
+// import axios from 'axios';
+import Projects from '../assets/projects.json';
 
-import Project from "./Project.js";
-import ProjectModal from "./ProjectModal";
+import Project from './Project.js';
+import ProjectModal from './ProjectModal';
 
-import "./ProjectList.scss";
+import './ProjectList.scss';
 
 function ProjectList(props) {
   // state for projects
@@ -14,14 +15,15 @@ function ProjectList(props) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    axios
-      .get("https://joel-perez-portfolio-be.herokuapp.com/api/projects")
-      .then(res => {
-        setProjects(res.data);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    setProjects(Projects);
+    // axios
+    //   .get("https://joel-perez-portfolio-be.herokuapp.com/api/projects")
+    //   .then(res => {
+    //     setProjects(res.data);
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
   }, []);
 
   const toggleModal = () => {
