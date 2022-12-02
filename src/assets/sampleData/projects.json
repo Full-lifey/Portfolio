@@ -1,0 +1,29 @@
+[
+    {
+      "id": 3,
+      "title": "Space ACME",
+      "description": "Space ACME is a 3D visualization tool for training satellite operations teams in space domain awareness.",
+      "imageURL": "Space-ACME.png",
+      "deployment": "https://space-acme.com/",
+      "repo": "https://github.com/RocketCommunicationsInc/space-acme",
+      "preview": "Space ACME is a 3D visualization tool for training satellite operations teams in overall readiness. /n This is accomplished by combining real and user-generated data to create training scenarios. I lead a team of engineers in building the MVP stages of the project using ThreeJS, React, and Python Flask."
+    },
+    {
+      "id": 2,
+      "title": "Astro UXDS",
+      "description": "Astro is a web component based UX design system. It is an open source project used in public and private space applications.",
+      "imageURL": "https://drive.google.com/file/d/13XIVyBvsMJRMSUujxWf_DuiO1L0y5hGF/view?usp=sharing",
+      "deployment": "https://www.astrouxds.com/",
+      "repo": "https://github.com/RocketCommunicationsInc/astro",
+      "preview": "Astro has been acknoledged for greatly contributing to space military readiness by reducing training time between applications for operators thoughout the space domain. /n /n I contributed to a StencilJS re-write as well as several new reusable components to the library."
+    },
+    {
+      "id": 1,
+      "title": "Isonas Pure Access",
+      "description": "A web app designed to manage door access for commercial and multi-family buildings.",
+      "imageURL": "https://i.imgur.com/aKQFfTr.png",
+      "deployment": "https://qae3.isonas.com/",
+      "repo": "https://gitlab.com/isonas/pure-access-platform/",
+      "preview": "A web application to control and manage door access for commercial and multi-family buildings. Pure Access is a Single Page Application built in ReactJS utilizing Redux, Sagas and Material UI. /n /n I was hired for a 13-week contract to contribute to a complete ReactJS rewrite of the Front End application. Utilizing a very short 3-hour introduction to the codebase I was able to begin coding components on day 1. In the short 13-week contract I was able to contribute over 8,000 lines of code spanning multiple key features and bug fixes."
+    }
+  ]
